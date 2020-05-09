@@ -1,14 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Page 2</title>
 </head>
-<body>
-    
 
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light py-3 px-auto px-md-5">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo/logo.png"  height="50" alt="logo">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-none d-md-block">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="image/icons/stats.png" class="mx-2" height="35" alt="stats">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <!-- <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">about us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">community & support</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div>
+                                <span class="d-inline d-md-none pr-2">notification</span><img src="image/icons/notification.png" alt="notification"><sup class="badge badge-danger text-light">4</sup>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    <li class="nav-item collapse-none">
+                        <a class="nav-link" href="#">
+                            <span class="d-inline d-md-none">message</span><img src="image/icons/message.png" alt="message"><sup class="badge badge-danger text-light">2</sup>
+                        </a>
+                    </li>
+                </ul>
+                <!-- <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+            </div>
+        </nav>
+    </header>
+    <!-- banner -->
+    <div class="banner">
+        <div class="banner-assets">
+            <img src="image/banner/banner1.jpg" alt="">
+        </div>
+    </div>
+    <!-- banner -->
+
+    <!-- navigate-item -->
+    <div class="container my-4 navigate-container">
+
+        <div class="card border-0">
+            <div class="row list text-center">
+                <div class="col-md-2 list-item" data-target="#type">
+                    <img src="image/icons/idea.png"  class="navigate-icon py-3" alt="idea">
+                    <p class="my-2">type</p>
+                </div>
+                <div class="col-md-2 list-item active" data-target="#info">
+                    <img src="image/icons/basic-info.png"  class="navigate-icon py-3" alt="basic-info">
+                    <p class="my-2">basic info</p>
+                </div>
+                <div class="col-md-2 list-item" data-target="#story">
+                    <img src="image/icons/story.png" class="navigate-icon py-3" alt="story">
+                    <p class="my-2">story</p>
+                </div>
+                <div class="col-md-2 list-item" data-target="#financials">
+                    <img src="image/icons/finance.png" class="navigate-icon py-3" alt="financials">
+                    <p class="my-2">financials</p>
+                </div>
+                <div class="col-md-2 list-item" data-target="#hr">
+                    <img src="image/icons/hr.png" class="navigate-icon py-3" alt="hr">
+                    <p class="my-2">hr</p>
+                </div>
+                <div class="col-md-2 list-item" data-target="#attachments">
+                    <img src="image/icons/attachment.png" class="navigate-icon py-3" alt="attachments">
+                    <p class="my-2">attachments</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- navigate-item -->
+
+    <!-- navigate-link -->
+    <div class="container my-4 panel-container">
+        <div class="panel active" id="type">
+            <form>
+                <input type="text" name="proposal-title" name="proposal-title" placeholder="Proposal Title">
+                <input type="text" name="proposal-title" name="proposal-title" placeholder="company or bussiness name">
+                <input type="text" name="proposal-title" name="proposal-title" placeholder="Peoposal Title">
+                <input type="text" name="proposal-title" name="proposal-title" placeholder="Peoposal Title">
+                <input type="text" name="proposal-title" name="proposal-title" placeholder="Peoposal Title">
+                <select name="induntry" id="induntry">
+                    <option value="" disabled selected>select industry</option>
+                    <option value="1">pak industry</option>
+                    <option value="2">karachi industry</option>
+                    <option value="3">sukkur industry</option>
+                    <option value="4">dado industry</option>
+                    <option value="5">lahore industry</option>
+                    <!-- <option value="6">kashmir industry</option> -->
+                </select>
+                <select name="induntry" id="induntry">
+                    <option value="1">pak industry</option>
+                    <option value="2">karachi industry</option>
+                    <option value="3">sukkur industry</option>
+                    <option value="4">dado industry</option>
+                    <option value="5">lahore industry</option>
+                    <option value="6">kashmir industry</option>
+                </select>
+                <select name="induntry" id="induntry">
+                    <option value="1">pak industry</option>
+                    <option value="2">karachi industry</option>
+                    <option value="3">sukkur industry</option>
+                    <option value="4">dado industry</option>
+                    <option value="5">lahore industry</option>
+                    <option value="6">kashmir industry</option>
+                </select>
+                <select name="induntry" id="induntry">
+                    <option value="1">pak industry</option>
+                    <option value="2">karachi industry</option>
+                    <option value="3">sukkur industry</option>
+                    <option value="4">dado industry</option>
+                    <option value="5">lahore industry</option>
+                    <option value="6">kashmir industry</option>
+                </select>
+                <select name="induntry" id="induntry">
+                    <option value="1">pak industry</option>
+                    <option value="2">karachi industry</option>
+                    <option value="3">sukkur industry</option>
+                    <option value="4">dado industry</option>
+                    <option value="5">lahore industry</option>
+                    <option value="6">kashmir industry</option>
+                </select>
+            
+            </form>
+            <div class="further-navigate my-5">
+                <div>
+                    <a href="page1.html">
+                    <img src="image/icons/chevron-left.png" alt="chevron"><span class="m-auto">Back</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                    <span class="m-auto">save & continue</span><img src="image/icons/chevron-right.png" alt="chevron">
+                    </a>
+                </div>
+            </div>
+            <div class="start-over text-center mb-5">
+                <a href="page1.html">
+                <img src="image/icons/powerbtn.png" height="25" alt="power"><span class="m-auto"> Start Over</span>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <!-- navigate-link -->
+
+
+    <!-- footer -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Footer links -->
+            <div class="row text-center text-md-left mt-3 pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                        <img src="image/logo/logo.png" height="60"  alt="logo">
+                    </h6>
+                    <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipisicing elit.</p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">support & community</h6>
+                    <p>
+                        <a href="#!">MDBootstrap</a>
+                    </p>
+                    <p>
+                        <a href="#!">MDWordPress</a>
+                    </p>
+                    <p>
+                        <a href="#!">BrandFlow</a>
+                    </p>
+                    <p>
+                        <a href="#!">Bootstrap Angular</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">navigation</h6>
+                    <p>
+                        <a href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a href="#!">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a href="#!">Help</a>
+                    </p>
+                </div>
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 m-auto mt-3 text-center">
+                    <p>subscribe to our newsletter</p>
+                    <form>
+                        <input type="text" class="form-control p-3" required>
+                        <input type="submit" value="SUBSCRIBE" class="px-4 py-2 my-2 btn-secondary btn">
+                    </form>
+                    <!-- <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p>
+                        <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i> + 01 234 567 89</p> -->
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Footer links -->
+
+
+            <!-- Grid row -->
+            
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+        <div class="copyright-div">
+
+            <!-- Grid column -->
+            <div class="col-md-8 m-auto py-3">
+
+                <!--Copyright-->
+                <p class="text-center m-auto">© 2020 Cpyright:
+                    <a href="https://mdbootstrap.com/">
+                        <strong> All Rights Reserved</strong>
+                    </a>
+                </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <!-- Grid column -->
+
+        </div>
+
+    </footer>
+    <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <script src="scripts/app.js"></script>
 </body>
+
 </html>

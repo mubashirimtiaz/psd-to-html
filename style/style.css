@@ -49,7 +49,7 @@
 }
 /* navigate item */
 
-/* panel */
+/* panel1 */
 .panel-container{
     max-width: 700px !important;
     min-height: 100vh !important;
@@ -60,9 +60,17 @@
     margin: auto;
     cursor: pointer;
     transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.8);
 }
 .panel-container .card:hover{
+    background: var(--theme-blue);
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+.panel-container .panel .card.active{
+    background: var(--theme-blue);
+}
+.panel-container .card a{
+    text-decoration: none;
 }
 .panel-container .panel{
     display: none;
@@ -70,9 +78,61 @@
 .panel-container .panel.active{
     display: block;
 }
+.panel-container .panel .further-navigate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.panel-container .panel .further-navigate a{
+    color: var(--font-color);
+    text-decoration: none;
+}
+.panel-container .panel .further-navigate a:hover{
+    color: var(--theme-blue);
+}
+.panel-container .panel .start-over a{
+    font-weight: 600;
+    color: var(--font-color);
+    text-decoration: none;
+} 
+.panel-container .panel .start-over a:hover{
+    color: var(--theme-blue);
+}
 
 
-/* panel */
+/* panel2 */
+
+/* panel3 */
+
+.panel-container .panel form{
+    text-align: center;
+}
+.panel-container .panel form input::placeholder{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--font-color);
+    text-transform: capitalize;
+}
+.panel-container .panel form input,.panel-container .panel form select{
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 0;
+    outline: none;
+    border: 1px solid #dddddd;
+    font-size: 18px;
+    border-bottom: 3px solid var(--theme-sky-blue);
+    margin: 20px 0;
+    color: var(--font-color);
+    font-weight: 500;
+    background: #ffffff;
+}
+.panel-container .panel form select,.panel-container .panel form select option{
+    text-transform: capitalize;
+    padding: 13px 10px;
+}
+
+
+/* panel3 */
 
 /* footer */
 footer{
